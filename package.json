@@ -1,0 +1,15 @@
+{
+  "name": "tetris",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carina-bugaga/tetris.git" 
+  },
+  "keywords": [],
+  "author": "carina-bugaga",
+  "license": "ISC"
+}
