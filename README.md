@@ -1,7 +1,7 @@
 # ИГРА «ТЕТРИС»
 > Классическая игра «Тетрис».
 
-![4-1](https://github.com/carina-bugaga/carina-bugaga/assets/98953836/f3005d55-ece1-4602-9c94-2fc2112b4868)
+![4-1](https://github.com/carina-bugaga/carina-bugaga/assets/98953836/0742fa7b-255f-49ec-aea6-1e61574d1ecd)
 
 ------------
 
