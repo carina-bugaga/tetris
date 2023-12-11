@@ -9,6 +9,7 @@ let gameBoard = document.querySelector('.board');
 const buttonReset = document.querySelector('.button');
 const buttonNewGame = document.getElementById('button-yes');
 const buttonCloseModal = document.getElementById('button-no');
+const score = document.getElementById('score');
 
 //Начальные состояния
 let requestId, timeoutId;
@@ -21,6 +22,7 @@ const Tetris = {
    * Инициализация игры
    */
   init () {
+    Tetris.score = 0;
     Tetris.cells = document.querySelectorAll('.board>div');
     Tetris.board;
     Tetris.figure;
@@ -80,6 +82,7 @@ const Tetris = {
    */
   newGame () {
     this.init();
+    score.innerHTML = this.score;
     moveDown();
   },
 
@@ -165,6 +168,8 @@ const Tetris = {
     }
     this.processFilledRows();
     this.generateFigure();
+    this.score += 1;
+    score.innerHTML = this.score;
   },
 
   /**
@@ -211,6 +216,7 @@ const Tetris = {
    * @param {Number} rowToDelete Номер строки для удаления
    */
   dropRowsAbove (rowToDelete) {
+    this.score += 10;
     for (let row = rowToDelete; row > 0; row--) {
       this.board[row] = this.board[row - 1]
     }
